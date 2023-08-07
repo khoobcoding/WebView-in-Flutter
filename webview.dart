@@ -1,3 +1,11 @@
+dependencies:
+  cupertino_icons: ^1.0.2
+  flutter:
+    sdk: flutter
+  webview_flutter: ^4.2.2  // Add this package in your pubspec.yaml
+    
+//  Internet Connection is required
+    
 import 'package:flutter/material.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 
