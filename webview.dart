@@ -3,8 +3,14 @@ dependencies:
   flutter:
     sdk: flutter
   webview_flutter: ^4.2.2  // Add this package in your pubspec.yaml
-    
-//  Internet Connection is required
+
+ //  webview_flutter support only Android and IOS Device
+ //  Internet Connection is required
+ //  Make Sure  compileSdkVersion 33
+ //  Add this below Android label Name in Android Manifest.xml
+    android:usesCleartextTraffic="true"
+ //  Add this below Package Name in Android Manifest.xml
+    <uses-permission android:name="android.permission.INTERNET" />
     
 import 'package:flutter/material.dart';
 import 'package:webview_flutter/webview_flutter.dart';
